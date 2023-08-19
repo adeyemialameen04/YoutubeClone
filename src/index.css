@@ -22,12 +22,13 @@
   font: inherit;
 
   --clr-gray: hsla(0, 0%, 100%, .7);
+  --clr-dark-gray: hsla(0, 0%, 100%, .15);
   --clr-white: #fff;
   --clr-black: #000;
 
   --transition: all 350ms ease-in-out;
-  --container-md: 94%;
-  --container-lg: 88%;
+  --container-md: 92%;
+  --container-lg: 90%;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -63,8 +64,9 @@ a:not([class]) {
 }
 
 a {
+  color: white;
+  text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  /* For iOS */
 }
 
 a:focus {

@@ -2,8 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import React, { useEffect } from "react";
 
-const useFetchVideoData = (URL) => {
-  // const baseUrl = "https://youtube-v31.p.rapidapi.com";
+const useFetchVideoData = (URL, queryKey) => {
   const baseUrl = "https://youtube138.p.rapidapi.com";
 
   const apiKey = import.meta.env.VITE_REACT_RAPIDAPI_API_KEY;
@@ -22,7 +21,7 @@ const useFetchVideoData = (URL) => {
     return data;
   };
 
-  const { data, refetch } = useQuery(["videoData"], getVideoData, {
+  const { data, refetch } = useQuery([queryKey], getVideoData, {
     enabled: !!URL,
   });
 
@@ -30,7 +29,7 @@ const useFetchVideoData = (URL) => {
     refetch();
   }, [URL]);
 
-  return data;
+  return { data };
 };
 
 export default useFetchVideoData;
