@@ -4,7 +4,7 @@ import "./home.css";
 
 const Home = () => {
   const searchQuery = "javascript";
-  const url = `search/?q=${searchQuery}&maxResults=10`;
+  const url = `search/?q=${searchQuery}`;
   const data = useFetchVideoData(url);
 
   return (
@@ -14,7 +14,6 @@ const Home = () => {
           data.contents &&
           data.contents.map(
             (data, index) =>
-              // <SearchedVideoCard  />
               data.type === "video" && (
                 <VideoCard key={index} video={data.video} />
               )
