@@ -21,6 +21,10 @@
   padding: 0;
   font: inherit;
 
+  --clr-gray: hsla(0, 0%, 100%, .7);
+  --clr-white: #fff;
+  --clr-black: #000;
+
   --transition: all 350ms ease-in-out;
   --container-md: 94%;
   --container-lg: 88%;
@@ -46,6 +50,11 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 /* A elements that don't have a class get default styles */
