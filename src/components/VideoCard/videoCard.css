@@ -1,0 +1,77 @@
+.video__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.thumbnail-container {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    background-color: black;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 10px;
+    right: 10px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.video-details {
+    display: flex;
+    gap: .5rem;
+    padding-bottom: .7rem;
+    padding-inline: .5rem;
+}
+
+.video-details .info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.info h2 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.info div h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--clr-gray);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.info div h5 {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.info div small {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--clr-gray);
+}
+
+.info div h5 span {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--clr-gray);
+}
+
+
+.video-details>img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
